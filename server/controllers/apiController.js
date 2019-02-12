@@ -1,0 +1,21 @@
+require("dotenv").config();
+const axios = require("axios");
+
+axios
+	.get(
+		`https://api.twitch.tv/kraken/streams/yassuo?client_id=gue31zwe29qzw9mlr2xmcje34ktit2`
+	)
+	.then(response => {
+		streams = response.data;
+		console.log(streams);
+		return streams;
+	});
+
+let getStreams = (req, res) => {
+	res.status(200).send(streams);
+	console.log(streams);
+};
+
+module.exports = {
+	getStreams
+};
