@@ -7,12 +7,12 @@ axios
 	)
 	.then(response => {
 		streams = response.data;
-		console.log(streams);
+		// console.log(streams);
 		return streams;
 	});
 let getStreams = (req, res) => {
 	res.status(200).send(streams);
-	console.log(streams);
+	// console.log(streams);
 
 	axios
 		.get(
@@ -20,13 +20,13 @@ let getStreams = (req, res) => {
 		)
 		.then(response => {
 			games = response.data;
-			console.log(games);
+			// console.log(games);
 			return games;
 		});
 };
 let getTopGames = (req, res) => {
 	res.status(200).send(games);
-	console.log(games);
+	// console.log(games);
 };
 
 module.exports = {

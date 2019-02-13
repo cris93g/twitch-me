@@ -9,16 +9,17 @@ const passport = require("passport");
 const app = express();
 const port = process.env.port || 3001;
 
-app.use(cors());
-
-app.use(json());
-
 routes(app);
 const {
 	getUser,
 	strat,
 	logout
 } = require(`${__dirname}/controllers/authController`);
+
+app.use(cors());
+
+app.use(json());
+
 app.use(require("body-parser").text());
 app.use(
 	session({
@@ -39,6 +40,10 @@ massive(process.env.CONNECTION_STRING)
 	.catch(err => {
 		console.log(err);
 	});
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(strat);
+
 passport.serializeUser((user, done) => {
 	const db = app.get("db");
 	db.getUserByAuthid([user.id])
