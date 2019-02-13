@@ -33,11 +33,6 @@ export default function twitchReducer(state = initialState, action) {
 				...state
 			};
 
-		case `${GET_STREAMS}_FULFILLED`:
-			return {
-				...state,
-				user: action.payload.data
-			};
 		case `${GET_TOP_GAMES}_FULFILLED`:
 			return {
 				...state,
@@ -46,12 +41,6 @@ export default function twitchReducer(state = initialState, action) {
 		case `${GET_TOP_GAMES}_REJECTED`:
 			return {
 				...state
-			};
-
-		case `${GET_TOP_GAMES}_FULFILLED`:
-			return {
-				...state,
-				user: action.payload.data
 			};
 
 		default:

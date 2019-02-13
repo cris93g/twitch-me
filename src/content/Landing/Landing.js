@@ -7,7 +7,7 @@ class Landing extends Component {
 			<div className="Landing">
 				<TopBar />
 				{/* Landing*/}
-				<LeftBar />
+				{/* <LeftBar /> */}
 			</div>
 		);
 	}
