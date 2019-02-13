@@ -1,0 +1,6 @@
+.topbar {
+	display: grid;
+	margin-left: 50%;
+	grid-template-columns: 100% 100% 100% 100% 100% 100% 100% 100% 100%auto;
+	grid-template-rows: 30px 2em 30px;
+}
