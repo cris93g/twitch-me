@@ -1,9 +1,16 @@
-import { createStore, applyMiddleware } from "redux";
+import { createStore, applyMiddleware, combineReducers } from "redux";
 
-import promiseMiddleware from "redux-promise-middleware";
+import promiseMiddleWare from "redux-promise-middleware";
 import userReducer from "./ducks/userReducer";
+import twitchReducer from "./ducks/twitchReducer";
 
-const middleware = applyMiddleware(promiseMiddleware);
-const store = createStore(userReducer, middleware);
+const middleware = applyMiddleware(promiseMiddleWare);
+
+const combinedReducers = combineReducers({
+	userReducer,
+	twitchReducer
+});
+
+const store = createStore(combinedReducers, middleware);
 
 export default store;
