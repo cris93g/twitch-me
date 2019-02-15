@@ -1,9 +1,8 @@
 .leftbar {
-	display: grid;
-	position: absolute;
-	margin-top: -92px;
-	grid-template-columns: 192px;
-
-	grid-template-rows: 100vh;
-	background: black;
+  display: flex;
+  width: 20vw;
+  height: 100vh;
+  background-color: #31323f;
+  position: absolute;
+  color: white;
 }
