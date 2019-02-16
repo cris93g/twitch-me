@@ -3,7 +3,7 @@ const axios = require("axios");
 
 axios
 	.get(
-		`https://api.twitch.tv/kraken/streams?client_id=gue31zwe29qzw9mlr2xmcje34ktit2&limit=2`
+		`https://api.twitch.tv/kraken/streams?client_id=gue31zwe29qzw9mlr2xmcje34ktit2&limit=5`
 	)
 	.then(response => {
 		streams = response.data;
