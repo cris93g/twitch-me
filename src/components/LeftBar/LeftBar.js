@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./LeftBar.css";
 import styled from "styled-components";
+import TopBar from "../TopBar/TopBar";
 
 const SidebarWrapper = styled.section`
 	width: 15%;
@@ -11,15 +12,53 @@ const SidebarWrapper = styled.section`
 	padding: 0;
 `;
 
+const Text = styled.section`
+	color: white;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	margin-top: 150px;
+`;
+
 class LeftBar extends Component {
 	render() {
 		return (
 			<SidebarWrapper>
 				<div className="leftbar">
-					<div>categories</div>
-					<div>all games</div>
-					<div>streams</div>
-					<div>my favorites</div>
+					<Text>
+						<TopBar />
+						<div className="side_headings">GAMES</div>
+						<div className="side_headings"> All Games</div>
+						<div className="side_headings">Categories</div>
+						<div className="subhead">
+							{" "}
+							<i className="material-icons">videogame_asset</i> Action
+						</div>
+						<div className="subhead">
+							{" "}
+							<i className="material-icons">videogame_asset</i> Adventure
+						</div>
+						<div className="subhead">
+							<i className="material-icons">videogame_asset</i> Casual
+						</div>
+						<div className="subhead">
+							{" "}
+							<i className="material-icons">videogame_asset</i>Strategy
+						</div>
+						<div className="subhead">
+							<i className="material-icons">videogame_asset</i> Itellectual
+						</div>
+						<div className="subhead">
+							{" "}
+							<i class="material-icons">videogame_asset</i> Sport
+						</div>
+
+						<div className="side_headings">Most Played</div>
+						<div className="lastH">MY GAMES</div>
+					</Text>
 				</div>
 			</SidebarWrapper>
 		);

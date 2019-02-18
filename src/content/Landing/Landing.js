@@ -26,9 +26,6 @@ class Landing extends Component {
 			<MainWrapper>
 				<NavBar>
 					<LeftBar />
-					<TopWrapper>
-						<TopBar />
-					</TopWrapper>
 				</NavBar>
 				{/* <MiddleWrapper> */}
 				<Streams />
