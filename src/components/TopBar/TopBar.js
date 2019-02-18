@@ -10,6 +10,14 @@ const Log = styled.section`
 	/* margin: auto; */
 `;
 
+const Circle = styled.section`
+	height: 15px;
+	width: 15px;
+	background-color: #7cfc00;
+	border-radius: 50%;
+	display: inline-block;
+`;
+
 class TopBar extends Component {
 	state = {
 		profile: {}
@@ -33,6 +41,7 @@ class TopBar extends Component {
 					</div>
 					<Log>
 						<LogIn />
+						{/* <Circle /> */}
 					</Log>
 				</div>
 			</div>

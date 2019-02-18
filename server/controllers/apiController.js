@@ -1,6 +1,7 @@
 require("dotenv").config();
 const axios = require("axios");
 const twitch = process.env.TWITCH_KEY;
+const streamer = process.env.STREAMER;
 
 axios
 	.get(`https://api.twitch.tv/kraken/streams?${twitch}&limit=4`)
@@ -26,8 +27,11 @@ let getTopGames = (req, res) => {
 	res.status(200).send(games);
 	console.log(games);
 };
+
 axios
-	.get(`https://api.twitch.tv/kraken/channels/shroud/videos?limit=10&${twitch}`)
+	.get(
+		`https://api.twitch.tv/kraken/channels/${streamer}/videos?limit=10&${twitch}`
+	)
 	.then(response => {
 		vods = response.data;
 		console.log(vods);
