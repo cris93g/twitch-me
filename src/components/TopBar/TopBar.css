@@ -1,26 +1,16 @@
-/* .topbar {
-	display: grid;
-	margin-left: 50%;
-	grid-template-columns: 100% 100% 100% 100% 100% 100% 100% 100% 100%;
-	grid-template-rows: 30px 2em 30px;
-	background: white;
-} */
 .navtop {
-  display: flex;
-  height: 20vh;
-  width: 100vw;
-  background-color: aqua;
-  justify-content: space-between;
+	margin-top: 0;
 }
+
 .avatar {
-  display: flex;
-  height: 50px;
-  width: 60px;
-  border-radius: 15px;
+	display: flex;
+	height: 50px;
+	width: 60px;
+	border-radius: 15px;
 }
 .avatar-image {
-  display: flex;
-  border-radius: 15px;
-  max-height: 100%;
-  max-width: 100%;
+	display: flex;
+	border-radius: 15px;
+	max-height: 100%;
+	max-width: 100%;
 }
