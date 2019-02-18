@@ -8,8 +8,9 @@ const Wrapper = styled.section`
 	/* width: 100%; */
 
 	/* display: flex; */
+	top: 180px;
 	position: relative;
-	left: 400px;
+	left: 450px;
 	color: white;
 `;
 
@@ -49,7 +50,7 @@ class Streams extends Component {
 						</a>
 						<TextWrapper>
 							<h4>{stream.channel.display_name}</h4>
-							<p>{stream.channel.status}</p>
+							<h5>{stream.channel.status}</h5>
 						</TextWrapper>
 					</Cards>
 					{/* <p>{`Game: ${stream.game}`}</p> */}

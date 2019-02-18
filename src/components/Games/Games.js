@@ -7,8 +7,9 @@ const Wrapper = styled.section`
 	/* width: 100%; */
 
 	/* display: flex; */
+	top: 160px;
 	position: relative;
-	left: 400px;
+	left: 450px;
 	color: white;
 `;
 
@@ -43,7 +44,7 @@ class Games extends Component {
 			return (
 				<Wrapper>
 					<Cards>
-						<img className="game-cards" src={game.game.box.large} />
+						<img className="game-cards" src={game.game.box.medium} />
 						<TextWrapper>
 							<h4 key={game.game._id}>{game.game.name}</h4>
 							<p>{`Current Viewers: ${game.viewers}`}</p>

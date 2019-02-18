@@ -9,7 +9,6 @@ const MainWrapper = styled.section`
 	width: 100%;
 	height: 100%;
 	background-color: #2b2c3a;
-	position: relative;
 `;
 
 const TopWrapper = styled.section`
