@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const Log = styled.section`
 	display: flex;
-	margin: auto;
+	/* margin: auto; */
 `;
 
 class TopBar extends Component {

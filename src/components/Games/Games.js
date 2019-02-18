@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./Games.css";
 import { connect } from "react-redux";
 import axios from "axios";
 import styled from "styled-components";
@@ -43,7 +43,7 @@ class Games extends Component {
 			return (
 				<Wrapper>
 					<Cards>
-						<img className="card-picture" src={game.game.box.large} />
+						<img className="game-cards" src={game.game.box.large} />
 						<TextWrapper>
 							<h4 key={game.game._id}>{game.game.name}</h4>
 							<p>{`Current Viewers: ${game.viewers}`}</p>

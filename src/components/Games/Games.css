@@ -1,0 +1,7 @@
+.game-cards {
+	display: flex;
+	border-radius: 5px;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+}

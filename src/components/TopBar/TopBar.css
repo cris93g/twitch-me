@@ -11,6 +11,7 @@
 	border-radius: 15px;
 }
 .avatar-image {
+	left: 80px;
 	margin: auto;
 	display: flex;
 	border-radius: 15px;
