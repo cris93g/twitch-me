@@ -5,19 +5,28 @@ import axios from "axios";
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-	width: 100%;
+	/* width: 100%; */
 
-	display: flex;
-	height: 100%;
-
+	/* display: flex; */
+	position: relative;
+	left: 400px;
 	color: white;
+`;
+
+const CardWrapper = styled.section`
+	display: flex;
+
+	margin: auto;
 `;
 
 const TextWrapper = styled.section`
 	margin: auto;
 	text-align: center;
 `;
-
+const Cards = styled.section`
+	height: 300px;
+	width: 355px;
+`;
 class Streams extends Component {
 	state = {
 		streams: []
@@ -34,21 +43,26 @@ class Streams extends Component {
 		const streamsDisplay = streams.map((stream, e) => {
 			return (
 				<Wrapper>
-					<div className="cards">
+					<Cards>
 						<a href={stream.channel.url}>
 							<img className="card-picture" src={stream.preview.medium} />
 						</a>
 						<TextWrapper>
-							<p>{stream.channel.display_name}</p>
+							<h4>{stream.channel.display_name}</h4>
 							<p>{stream.channel.status}</p>
 						</TextWrapper>
-						{/* <p>{`Game: ${stream.game}`}</p> */}
-						{/* <p>{`Viewers: ${stream.viewers}`}</p> */}
-					</div>
+					</Cards>
+					{/* <p>{`Game: ${stream.game}`}</p> */}
+					{/* <p>{`Viewers: ${stream.viewers}`}</p> */}
 				</Wrapper>
 			);
 		});
-		return <div className="">{streamsDisplay}</div>;
+		return (
+			<div className="">
+				<h2>Top Streams</h2>
+				<CardWrapper>{streamsDisplay}</CardWrapper>
+			</div>
+		);
 	}
 }
 

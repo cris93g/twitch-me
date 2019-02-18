@@ -1,16 +1,24 @@
 .navtop {
 	margin-top: 0;
+	margin: auto;
 }
 
 .avatar {
 	display: flex;
+	margin: auto;
 	height: 50px;
 	width: 60px;
 	border-radius: 15px;
 }
 .avatar-image {
+	margin: auto;
 	display: flex;
 	border-radius: 15px;
 	max-height: 100%;
 	max-width: 100%;
+}
+.idk {
+	margin: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }

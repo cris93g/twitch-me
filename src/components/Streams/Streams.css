@@ -1,5 +1,9 @@
 .card-picture {
-	max-height: 100%;
-	max-width: 100%;
 	border-radius: 15px;
+	height: 210px;
+	width: 300px;
+	margin-left: 15px;
+}
+h2 {
+	color: white;
 }

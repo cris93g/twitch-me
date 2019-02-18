@@ -5,38 +5,38 @@ import LeftBar from "../../components/LeftBar/LeftBar";
 import Streams from "../../components/Streams/Streams";
 import Games from "../../components/Games/Games";
 import styled from "styled-components";
-
-const MiddleWrapper = styled.section`
-	/* display: flex; */
-	width: 30%;
-	height: 30%;
-	/* justify-content: space-between; */
-	margin: auto;
+const MainWrapper = styled.section`
+	width: 100%;
+	height: 100%;
+	background-color: #2b2c3a;
+	position: relative;
 `;
 
-// const Wrapper = styled.section`
-// 	display: flex;
-// 	flex-direction: row;
-// 	flex-wrap: wrap;
-// 	justify-content: space-between;
-// 	/* align-items: flex-start; */
-// 	align-content: stretch;
-// `;
+const TopWrapper = styled.section`
+	width: 100%;
+	background-color: #2b2c3a;
+`;
+
+const NavBar = styled.section`
+	display: flex;
+`;
 
 class Landing extends Component {
 	render() {
 		return (
-			// <Wrapper>
-			<div className="landing">
-				{/* <LeftBar /> */}
-				{/* <TopBar /> */}
-
-				{/* <Games /> */}
-				<MiddleWrapper>
-					<Streams />
-				</MiddleWrapper>
-			</div>
-			// </Wrapper>
+			<MainWrapper>
+				<NavBar>
+					<LeftBar />
+					<TopWrapper>
+						<TopBar />
+					</TopWrapper>
+				</NavBar>
+				{/* <MiddleWrapper> */}
+				<Streams />
+				<br />
+				<Games />
+				{/* </MiddleWrapper> */}
+			</MainWrapper>
 		);
 	}
 }
