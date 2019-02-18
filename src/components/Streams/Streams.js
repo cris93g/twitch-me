@@ -60,7 +60,7 @@ class Streams extends Component {
 		});
 		return (
 			<div className="">
-				<h2 style={{ left: "400px" }}>Top Streams</h2>
+				<h2>Top Streams</h2>
 				<CardWrapper>{streamsDisplay}</CardWrapper>
 			</div>
 		);

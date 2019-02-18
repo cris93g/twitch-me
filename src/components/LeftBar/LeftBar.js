@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./LeftBar.css";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import TopBar from "../TopBar/TopBar";
 
@@ -20,7 +21,7 @@ const Text = styled.section`
 	justify-content: space-between;
 	align-items: stretch;
 	align-content: stretch;
-	margin-top: 150px;
+	margin-top: 40px;
 `;
 
 class LeftBar extends Component {
@@ -30,33 +31,57 @@ class LeftBar extends Component {
 				<div className="leftbar">
 					<Text>
 						<TopBar />
-						<div className="side_headings">GAMES</div>
-						<div className="side_headings"> All Games</div>
+						<Link to="/">
+							<div className="side_headings">GAMES</div>
+						</Link>
+						<Link to="/">
+							<div className="side_headings"> All Games</div>
+						</Link>
 						<div className="side_headings">Categories</div>
-						<div className="subhead">
+						<Link to="/">
 							{" "}
-							<i className="material-icons">videogame_asset</i> Action
-						</div>
-						<div className="subhead">
+							<div className="subhead">
+								{" "}
+								<i className="material-icons">videogame_asset</i> Action
+							</div>
+						</Link>
+						<Link to="/">
 							{" "}
-							<i className="material-icons">videogame_asset</i> Adventure
-						</div>
-						<div className="subhead">
-							<i className="material-icons">videogame_asset</i> Casual
-						</div>
-						<div className="subhead">
+							<div className="subhead">
+								{" "}
+								<i className="material-icons">videogame_asset</i> Adventure
+							</div>
+						</Link>
+						<Link to="/">
 							{" "}
-							<i className="material-icons">videogame_asset</i>Strategy
-						</div>
-						<div className="subhead">
-							<i className="material-icons">videogame_asset</i> Itellectual
-						</div>
-						<div className="subhead">
+							<div className="subhead">
+								<i className="material-icons">videogame_asset</i> Casual
+							</div>
+						</Link>
+						<Link to="/">
 							{" "}
-							<i class="material-icons">videogame_asset</i> Sport
-						</div>
+							<div className="subhead">
+								{" "}
+								<i className="material-icons">videogame_asset</i>Strategy
+							</div>
+						</Link>
+						<Link to="/">
+							{" "}
+							<div className="subhead">
+								<i className="material-icons">videogame_asset</i> Itellectual
+							</div>
+						</Link>
+						<Link to="/">
+							{" "}
+							<div className="subhead">
+								{" "}
+								<i class="material-icons">videogame_asset</i> Sport
+							</div>
+						</Link>
 
-						<div className="side_headings">Most Played</div>
+						<Link to="/">
+							<div className="side_headings">Most Played</div>
+						</Link>
 						<div className="lastH">MY GAMES</div>
 					</Text>
 				</div>
